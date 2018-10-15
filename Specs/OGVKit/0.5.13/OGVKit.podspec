@@ -191,7 +191,7 @@ Pod::Spec.new do |s|
                                    "Classes/OGVEncoder.h"
   end
 
-  s.subspec "VorbisEncoder" do |svorbisenc|
+  s.subspec "VorbisEncode1" do |svorbisenc|
     svorbisenc.xcconfig = { 'OTHER_CFLAGS' => '-DOGVKIT_HAVE_VORBIS_ENCODER' }
     svorbisenc.dependency 'OGVKit/EncoderCore'
     svorbisenc.source_files = "Classes/OGVVorbisEncoder.{h,m}"
