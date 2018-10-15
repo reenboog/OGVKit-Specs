@@ -175,20 +175,13 @@ Pod::Spec.new do |s|
 
   s.subspec "EncoderCore" do |scoreenc|
     scoreenc.xcconfig = { 'OTHER_CFLAGS' => '-DOGVKIT_HAVE_ENCODER' }
-    scoreenc.source_files = "Classes/OGVPacket.h",
-                            "Classes/OGVPacket.m",
-                            "Classes/OGVMuxer.h",
-                            "Classes/OGVMuxer.m",
-                            "Classes/OGVOutputStream.h",
-                            "Classes/OGVOutputStream.m",
-                            "Classes/OGVFileOutputStream.h",
-                            "Classes/OGVFileOutputStream.m",
-                            "Classes/OGVAudioEncoder.h",
-                            "Classes/OGVAudioEncoder.m",
-                            "Classes/OGVVideoEncoder.h",
-                            "Classes/OGVVideoEncoder.m",
-                            "Classes/OGVEncoder.h",
-                            "Classes/OGVEncoder.m"
+    scoreenc.source_files = "Classes/OGVPacket.{h, m}",
+                            "Classes/OGVMuxer.{h, m}",
+                            "Classes/OGVOutputStream.{h, m}",
+                            "Classes/OGVFileOutputStream.{h, m}",
+                            "Classes/OGVAudioEncoder.{h, m}",
+                            "Classes/OGVVideoEncoder.{h, m}",
+                            "Classes/OGVEncoder.{h, m}",
     scoreenc.public_header_files = "Classes/OGVPacket.h",
                                    "Classes/OGVMuxer.h",
                                    "Classes/OGVOutputStream.h",
@@ -201,8 +194,8 @@ Pod::Spec.new do |s|
   s.subspec "VorbisEncoder" do |svorbisenc|
     svorbisenc.xcconfig = { 'OTHER_CFLAGS' => '-DOGVKIT_HAVE_VORBIS_ENCODER' }
     svorbisenc.dependency 'OGVKit/EncoderCore'
-    svorbisenc.source_files = "Classes/OGVVorbisEncoder.h",
-                              "Classes/OGVVorbisEncoder.m"
+    svorbisenc.source_files = "Classes/OGVVorbisEncoder.{h,m}"
+    svorbisenc.public_header_files = "Classes/OGVVorbisEncoder.h"
   end
 
   s.subspec "VP8Encoder" do |svp8enc|
