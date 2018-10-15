@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
                          "Classes/OGVPlayerState.{h,m}",
                          "Classes/OGVPlayerView.{h,m}"
 
-                         "Classes/OGVEncoder.{h, m}",
+                         "Classes/OGVEncoder.{h, m}"
 
     score.public_header_files = "Classes/OGVKit.h",
                                 "Classes/OGVQueue.h",
