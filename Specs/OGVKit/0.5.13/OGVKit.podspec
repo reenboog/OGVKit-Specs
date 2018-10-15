@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
                          "Classes/OGVFrameView.{h,m}",
                          "Classes/OGVAudioFeeder.{h,m}",
                          "Classes/OGVPlayerState.{h,m}",
-                         "Classes/OGVPlayerView.{h,m}"
+                         "Classes/OGVPlayerView.{h,m}",
 
                          "Classes/OGVEncoder.{h, m}"
 
