@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/reenboog/OGVKit.git",
+  s.source       = { :git => "https://github.com/reenboog/ogv-kit.git",
                      :tag => s.version,
                      :submodules => true }
 
